@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .student-info {
+            margin-bottom: 20px;
+        }
+
+        .student-info p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .result-summary {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .result-summary div {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .summary-item {
+            color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-btn:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Results</h1>
+    
+    <!-- Student Information -->
+    <div class="student-info">
+      <p><strong>Name:</strong> Ahmed Ali</p>
+      <p><strong>Student ID:</strong> S123456789</p>
+      <p><strong>Class:</strong> 10th Grade (Matric)</p>
+      <p><strong>School:</strong> FGS School, Karachi</p>
+    </div>
+
+    <!-- Results Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th>
+          <th>Marks Obtained</th>
+          <th>Grade Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample data for student results -->
+        <tr>
+          <td>Mathematics</td>
+          <td>A</td>
+          <td>92</td>
+          <td>4.0</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>B+</td>
+          <td>85</td>
+          <td>3.5</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>A-</td>
+          <td>88</td>
+          <td>3.7</td>
+        </tr>
+        <tr>
+          <td>Chemistry</td>
+          <td>B</td>
+          <td>78</td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+          <td>Islamiyat</td>
+          <td>A</td>
+          <td>90</td>
+          <td>4.0</td>
+        </tr>
+        <tr>
+          <td>Urdu</td>
+          <td>B</td>
+          <td>80</td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+          <td>Computer Science</td>
+          <td>A</td>
+          <td>95</td>
+          <td>4.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Summary Section -->
+    <div class="result-summary">
+      <div class="summary-item">
+        <p><strong>Total Marks:</strong> 628</p>
+      </div>
+      <div class="summary-item">
+        <p><strong>GPA:</strong> 3.75</p>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="footer">
+      <button class="back-btn" onclick="window.history.back();">Back to Dashboard</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .a {
+    display: flex;
+    justify-content: center;
+  }
+  .b {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+  }
+  .c {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(180, 178, 178);
+  }
+  
+  .x {
+      margin-left: 6px;
+  }
+  .y {
+      margin-left: 6px;
+  }
+  .z {
+      margin-left: 6px;
+  }
+  .ii {
+    width: 30px;
+    height: 30px;
+  }
+  .registration {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bt {
+    border-radius: 20%;
+    background-color: transparent;
+    margin-right: 40px;
+  }
+  .bt:hover {
+    cursor: pointer;
+  }
+  
+  .social {
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+  }
+  .nav{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  .q{
+      margin-left: 20px;
+      background-color: transparent;
+      border: transparent;
+  }
+  .w{
+      margin-left: 20px;
+      background-color: transparent;
+      border: transparent;
+  }
+  .e{
+      margin-left: 20px;
+      background-color: transparent;
+      border: transparent;
+  }
+  .info{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: rgb(16, 49, 118);
+      gap: 60px;
+      margin-top: 50px;
+      }
+  .country{
+       display: block;
+  }
+  .city{
+    display: block;
+  }
+  select{
+    width: 350px;
+    height: 50px;
+  }
+  .inf{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: rgb(16, 49, 118);
+      gap: 60px;
+      margin-top: 50px;
+  }
+  .in{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: rgb(16, 49, 118);
+      gap: 60px;
+      margin-top: 50px;
+  }
+  .ccountry{
+    display: block;
+  }
+  input{
+    width: 350px;
+    height: 50px;
+  }
+  
+  .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: rgb(16, 49, 118);
+    gap: 60px;
+    margin-top: 50px;
+  }
+  .submit{
+    margin-top: 30px;
+    width: 800px;
+    height: 30px;
+    background-color: rgb(50, 141, 205);
+  }
+  

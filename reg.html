@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Educational Website Registration</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f7fc;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .container {
+          width: 100%;
+          max-width: 500px;
+          margin: 50px auto;
+          padding: 20px;
+          background-color: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+    
+        h1 {
+          text-align: center;
+          color: #333;
+        }
+    
+        label {
+          font-weight: bold;
+          color: #555;
+          display: block;
+          margin-bottom: 8px;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin: 8px 0 16px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          font-size: 14px;
+        }
+    
+        input[type="radio"] {
+          margin-right: 8px;
+        }
+    
+        .submit-btn {
+          width: 100%;
+          padding: 12px;
+          background-color: #4CAF50;
+          color: white;
+          font-size: 16px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    
+        .submit-btn:hover {
+          background-color: #45a049;
+        }
+    
+        .form-footer {
+          text-align: center;
+          margin-top: 16px;
+        }
+    
+        .form-footer a {
+          color: #4CAF50;
+          text-decoration: none;
+        }
+    
+        .form-footer a:hover {
+          text-decoration: underline;
+        }
+    
+        .error {
+          color: red;
+          font-size: 14px;
+          margin-top: -10px;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <div class="container">
+        <h1>Register</h1>
+        <form id="registrationForm" onsubmit="return validateForm()">
+          <!-- Name Field -->
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          <div id="nameError" class="error"></div>
+    
+          <!-- Email Field -->
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <div id="emailError" class="error"></div>
+    
+          <!-- Phone Number Field -->
+          <label for="phone">Phone Number (Optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}">
+    
+          <!-- Password Field -->
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required>
+          <div id="passwordError" class="error"></div>
+    
+          <!-- Confirm Password Field -->
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+          <div id="confirmPasswordError" class="error"></div>
+    
+          <!-- User Type (Student/Teacher) -->
+          <label>User Type</label>
+          <input type="radio" id="student" name="userType" value="student" checked>
+          <label for="student">Student</label>
+          <input type="radio" id="teacher" name="userType" value="teacher">
+          <label for="teacher">Teacher</label>
+    
+          <!-- Additional Notes -->
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" placeholder="Any additional information or preferences?" rows="4"></textarea>
+    
+          <!-- Submit Button -->
+          <input type="submit" value="Register" class="submit-btn">
+        </form>
+    
+        <div class="form-footer">
+          <p>Already have an account? <a href="#">Login here</a></p>
+        </div>
+      </div>
+    
+      <script>
+        // Form validation function
+        function validateForm() {
+          let valid = true;
+    
+          // Clear previous errors
+          document.getElementById("nameError").innerText = "";
+          document.getElementById("emailError").innerText = "";
+          document.getElementById("passwordError").innerText = "";
+          document.getElementById("confirmPasswordError").innerText = "";
+    
+          // Name validation
+          const name = document.getElementById("name").value.trim();
+          if (name === "") {
+            document.getElementById("nameError").innerText = "Full Name is required.";
+            valid = false;
+          }
+    
+          // Email validation
+          const email = document.getElementById("email").value.trim();
+          const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+          if (email === "" || !emailPattern.test(email)) {
+            document.getElementById("emailError").innerText = "Please enter a valid email address.";
+            valid = false;
+          }
+    
+          // Password validation
+          const password = document.getElementById("password").value.trim();
+          if (password === "") {
+            document.getElementById("passwordError").innerText = "Password is required.";
+            valid = false;
+          }
+    
+          // Confirm password validation
+          const confirmPassword = document.getElementById("confirmPassword").value.trim();
+          if (confirmPassword !== password) {
+            document.getElementById("confirmPasswordError").innerText = "Passwords do not match.";
+            valid = false;
+          }
+    
+          // If form is valid, return true to submit the form
+          return valid;
+        }
+      </script>
+    
+    </body>
+    </html>
+    
+
+</body>
+</html>
